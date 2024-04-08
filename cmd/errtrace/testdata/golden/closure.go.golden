@@ -4,7 +4,7 @@ package foo
 
 import (
 	"errors"
-	"fmt"; "braces.dev/errtrace"
+	"fmt"; "github.com/mypricehealth/errtrace"
 )
 
 func ClosureReturnsError() error {

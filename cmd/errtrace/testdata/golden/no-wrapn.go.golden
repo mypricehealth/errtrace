@@ -3,7 +3,7 @@
 // @runIf options=no-wrapn
 package foo
 
-import "example.com/bar"; import "braces.dev/errtrace"
+import "example.com/bar"; import "github.com/mypricehealth/errtrace"
 
 func hasTwo() (int, error) {
 	// Same names as used by rewriting, with different types to verify scoping.

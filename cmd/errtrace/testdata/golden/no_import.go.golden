@@ -1,6 +1,6 @@
 //go:build ignore
 
-package foo; import "braces.dev/errtrace"
+package foo; import "github.com/mypricehealth/errtrace"
 
 type myError struct{}
 

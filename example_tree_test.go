@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"braces.dev/errtrace"
-	"braces.dev/errtrace/internal/tracetest"
+	"github.com/mypricehealth/errtrace"
+	"github.com/mypricehealth/errtrace/internal/tracetest"
 )
 
 func normalErr(i int) error {
@@ -41,14 +41,14 @@ func Example_tree() {
 	// |
 	// +- std err 2
 	// |
-	// |  braces.dev/errtrace_test.wrapNormalErr
+	// |  github.com/mypricehealth/errtrace_test.wrapNormalErr
 	// |  	/path/to/errtrace/example_tree_test.go:1
 	// |
 	// |  +- std err 3
 	// |  |
 	// |  +- std err 4
 	// |  |
-	// |  |  braces.dev/errtrace_test.wrapNormalErr
+	// |  |  github.com/mypricehealth/errtrace_test.wrapNormalErr
 	// |  |  	/path/to/errtrace/example_tree_test.go:1
 	// |  |
 	// +- std err 3
@@ -59,7 +59,7 @@ func Example_tree() {
 	// std err 3
 	// std err 4
 	//
-	// braces.dev/errtrace_test.Example_tree
+	// github.com/mypricehealth/errtrace_test.Example_tree
 	// 	/path/to/errtrace/example_tree_test.go:2
 }
 

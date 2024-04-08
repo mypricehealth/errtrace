@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"braces.dev/errtrace/cmd/errtrace/testdata/main/foo"
+	"github.com/mypricehealth/errtrace/cmd/errtrace/testdata/main/foo"
 )
 
 func main() {

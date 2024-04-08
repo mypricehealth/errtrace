@@ -64,4 +64,4 @@ errtrace-lint: $(ERRTRACE)
 	fi
 
 $(ERRTRACE):
-	go install braces.dev/errtrace/cmd/errtrace
+	go install github.com/mypricehealth/errtrace/cmd/errtrace

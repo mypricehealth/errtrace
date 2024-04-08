@@ -5,7 +5,7 @@ package foo
 import (
 	"strconv"
 
-	errtrace2 "braces.dev/errtrace"
+	errtrace2 "github.com/mypricehealth/errtrace"
 )
 
 var _ = errtrace2.Wrap // keep import

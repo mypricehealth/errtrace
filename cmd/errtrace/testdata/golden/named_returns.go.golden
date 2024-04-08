@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"go.uber.org/multierr"; "braces.dev/errtrace"
+	"go.uber.org/multierr"; "github.com/mypricehealth/errtrace"
 )
 
 func NoError() (x int) {

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"braces.dev/errtrace/internal/pc"
+	"github.com/mypricehealth/errtrace/internal/pc"
 )
 
 // New returns an error with the supplied text.

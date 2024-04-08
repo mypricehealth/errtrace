@@ -5,7 +5,7 @@ package foo
 import (
 	"strconv"
 
-	_ "braces.dev/errtrace"; "braces.dev/errtrace"
+	_ "github.com/mypricehealth/errtrace"; "github.com/mypricehealth/errtrace"
 )
 
 func Unwrapped(s string) (int, error) {

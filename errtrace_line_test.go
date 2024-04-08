@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"braces.dev/errtrace"
+	"github.com/mypricehealth/errtrace"
 )
 
 //go:embed errtrace_line_test.go

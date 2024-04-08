@@ -12,7 +12,7 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"braces.dev/errtrace"
+	"github.com/mypricehealth/errtrace"
 )
 
 func (cmd *mainCmd) handleToolExec(args []string) (exitCode int, handled bool) {

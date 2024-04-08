@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"braces.dev/errtrace"
+	"github.com/mypricehealth/errtrace"
 )
 
 func TestWrapNil(t *testing.T) {

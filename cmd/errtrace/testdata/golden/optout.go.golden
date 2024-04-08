@@ -6,7 +6,7 @@ import (
 	"errors"
 	"io"
 
-	"example.com/bar"; "braces.dev/errtrace"
+	"example.com/bar"; "github.com/mypricehealth/errtrace"
 )
 
 func Try(problem bool) (int, error) {

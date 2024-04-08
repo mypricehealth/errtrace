@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	_ "braces.dev/errtrace" // Opt-in to errtrace wrapping with toolexec.
-	"braces.dev/errtrace/cmd/errtrace/testdata/toolexec-test/p1"
+	_ "github.com/mypricehealth/errtrace" // Opt-in to errtrace wrapping with toolexec.
+	"github.com/mypricehealth/errtrace/cmd/errtrace/testdata/toolexec-test/p1"
 )
 
 func main() {

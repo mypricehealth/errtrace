@@ -1,4 +1,4 @@
-module braces.dev/errtrace/assets
+module github.com/mypricehealth/errtrace/assets
 
 go 1.20
 

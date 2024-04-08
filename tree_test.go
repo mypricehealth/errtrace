@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"braces.dev/errtrace/internal/diff"
+	"github.com/mypricehealth/errtrace/internal/diff"
 )
 
 func errorCaller() error {
@@ -31,11 +31,11 @@ func TestBuildTreeSingle(t *testing.T) {
 		t.Fatalf("trace length mismatch, want %d, got %d", want, got)
 	}
 
-	if want, got := "braces.dev/errtrace.errorCallee", trace[0].Name; want != got {
+	if want, got := "github.com/mypricehealth/errtrace.errorCallee", trace[0].Name; want != got {
 		t.Errorf("innermost function should be first, want %q, got %q", want, got)
 	}
 
-	if want, got := "braces.dev/errtrace.errorCaller", trace[1].Name; want != got {
+	if want, got := "github.com/mypricehealth/errtrace.errorCaller", trace[1].Name; want != got {
 		t.Errorf("outermost function should be last, want %q, got %q", want, got)
 	}
 }
@@ -56,11 +56,11 @@ func TestBuildTreeMulti(t *testing.T) {
 			t.Fatalf("trace length mismatch, want %d, got %d", want, got)
 		}
 
-		if want, got := "braces.dev/errtrace.errorCallee", child.Trace[0].Name; want != got {
+		if want, got := "github.com/mypricehealth/errtrace.errorCallee", child.Trace[0].Name; want != got {
 			t.Errorf("innermost function should be first, want %q, got %q", want, got)
 		}
 
-		if want, got := "braces.dev/errtrace.errorCaller", child.Trace[1].Name; want != got {
+		if want, got := "github.com/mypricehealth/errtrace.errorCaller", child.Trace[1].Name; want != got {
 			t.Errorf("outermost function should be last, want %q, got %q", want, got)
 		}
 	}

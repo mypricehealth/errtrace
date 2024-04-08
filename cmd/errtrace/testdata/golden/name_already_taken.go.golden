@@ -2,7 +2,7 @@
 
 package foo
 
-import "strconv"; import errtrace2 "braces.dev/errtrace"
+import "strconv"; import errtrace2 "github.com/mypricehealth/errtrace"
 
 func Unwrapped(errtrace string) (int, error) {
 	// For some reason, the string is named errtrace.

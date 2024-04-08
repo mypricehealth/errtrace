@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strings"
 
-	"braces.dev/errtrace"
-	"braces.dev/errtrace/internal/tracetest"
+	"github.com/mypricehealth/errtrace"
+	"github.com/mypricehealth/errtrace/internal/tracetest"
 )
 
 func Example_http() {
@@ -23,11 +23,11 @@ func Example_http() {
 	// Output:
 	// Error fetching packages: Get "http://example.com/packages.index": connect rate limited
 	//
-	// braces.dev/errtrace_test.rateLimitDialer
+	// github.com/mypricehealth/errtrace_test.rateLimitDialer
 	// 	/path/to/errtrace/example_http_test.go:3
-	// braces.dev/errtrace_test.(*PackageStore).updateIndex
+	// github.com/mypricehealth/errtrace_test.(*PackageStore).updateIndex
 	// 	/path/to/errtrace/example_http_test.go:2
-	// braces.dev/errtrace_test.(*PackageStore).Get
+	// github.com/mypricehealth/errtrace_test.(*PackageStore).Get
 	// 	/path/to/errtrace/example_http_test.go:1
 }
 

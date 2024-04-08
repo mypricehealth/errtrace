@@ -18,8 +18,8 @@ import (
 	"sync"
 	"testing"
 
-	"braces.dev/errtrace"
-	"braces.dev/errtrace/internal/diff"
+	"github.com/mypricehealth/errtrace"
+	"github.com/mypricehealth/errtrace/internal/diff"
 )
 
 func TestErrHelp(t *testing.T) {
@@ -406,7 +406,7 @@ func TestFormatAuto(t *testing.T) {
 
 	wantUnformatted := strings.Join([]string{
 		"package foo",
-		`import "errors"; import "braces.dev/errtrace"`,
+		`import "errors"; import "github.com/mypricehealth/errtrace"`,
 		"func foo() error {",
 		`	return errtrace.Wrap(errors.New("foo"))`,
 		"}",
@@ -416,7 +416,7 @@ func TestFormatAuto(t *testing.T) {
 		"package foo",
 		"",
 		`import "errors"`,
-		`import "braces.dev/errtrace"`,
+		`import "github.com/mypricehealth/errtrace"`,
 		"",
 		"func foo() error {",
 		`	return errtrace.Wrap(errors.New("foo"))`,
@@ -516,7 +516,7 @@ func TestListFlag(t *testing.T) {
 
 	instrumentedSource := strings.Join([]string{
 		"package foo",
-		`import "errors"; import "braces.dev/errtrace"`,
+		`import "errors"; import "github.com/mypricehealth/errtrace"`,
 		"func foo() error {",
 		`	return errtrace.Wrap(errors.New("foo"))`,
 		"}",

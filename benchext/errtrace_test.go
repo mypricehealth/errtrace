@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"braces.dev/errtrace"
+	"github.com/mypricehealth/errtrace"
 )
 
 func recurseErrtrace(n int) error {

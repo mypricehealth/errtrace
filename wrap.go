@@ -1,7 +1,7 @@
 package errtrace
 
 import (
-	"braces.dev/errtrace/internal/pc"
+	"github.com/mypricehealth/errtrace/internal/pc"
 )
 
 // Wrap adds information about the program counter of the caller to the error.

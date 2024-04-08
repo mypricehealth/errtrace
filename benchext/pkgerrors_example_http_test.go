@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"braces.dev/errtrace/internal/tracetest"
+	"github.com/mypricehealth/errtrace/internal/tracetest"
 	"github.com/pkg/errors"
 )
 
@@ -32,7 +32,7 @@ func Example_http() {
 	fmt.Printf("Error fetching packages: %s\n", cleanGoRoot(tracetest.MustClean(fmt.Sprintf("%+v", err))))
 	// Output:
 	// Error fetching packages: connect rate limited
-	// braces.dev/errtrace/benchext.rateLimitDialer
+	// github.com/mypricehealth/errtrace/benchext.rateLimitDialer
 	// 	/path/to/errtrace/benchext/pkgerrors_example_http_test.go:1
 	// net/http.(*Transport).dial
 	// 	/goroot/src/net/http/transport.go:0

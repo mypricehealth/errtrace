@@ -14,8 +14,8 @@ import (
 	"strings"
 	"testing"
 
-	"braces.dev/errtrace"
-	"braces.dev/errtrace/internal/diff"
+	"github.com/mypricehealth/errtrace"
+	"github.com/mypricehealth/errtrace/internal/diff"
 )
 
 func TestToolExec(t *testing.T) {

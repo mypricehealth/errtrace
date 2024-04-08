@@ -3,7 +3,7 @@ package p1
 import (
 	"fmt"
 
-	"braces.dev/errtrace/cmd/errtrace/testdata/toolexec-test/p2"
+	"github.com/mypricehealth/errtrace/cmd/errtrace/testdata/toolexec-test/p2"
 )
 
 // WrapP2 wraps an error return from p2.

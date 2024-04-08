@@ -1,6 +1,6 @@
 package tracetest
 
-import "braces.dev/errtrace"
+import "github.com/mypricehealth/errtrace"
 
 // Separate file to verify how Clean handles separate files.
 

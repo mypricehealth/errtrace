@@ -4,7 +4,7 @@
 //
 // Install errtrace with:
 //
-//	go install braces.dev/errtrace/cmd/errtrace@latest
+//	go install github.com/mypricehealth/errtrace/cmd/errtrace@latest
 //
 // # Usage
 //
@@ -49,7 +49,7 @@ import (
 	"strconv"
 	"strings"
 
-	"braces.dev/errtrace"
+	"github.com/mypricehealth/errtrace"
 )
 
 func main() {
@@ -426,7 +426,7 @@ func (cmd *mainCmd) parseFile(filename string, src []byte, opts rewriteOpts) (pa
 	var importsErrtrace bool   // whether there's any errtrace import, including blank imports
 	needErrtraceImport := true // whether to add a new import.
 	for _, imp := range f.Imports {
-		if imp.Path.Value == `"braces.dev/errtrace"` {
+		if imp.Path.Value == `"github.com/mypricehealth/errtrace"` {
 			importsErrtrace = true
 			if imp.Name != nil {
 				if imp.Name.Name == "_" {
@@ -576,9 +576,9 @@ func (cmd *mainCmd) rewriteFile(f parsedFile, out *bytes.Buffer) error {
 
 			if f.errtracePkg == "errtrace" {
 				// Don't use named imports if we're using the default name.
-				fmt.Fprintf(out, "%q", "braces.dev/errtrace")
+				fmt.Fprintf(out, "%q", "github.com/mypricehealth/errtrace")
 			} else {
-				fmt.Fprintf(out, "%s %q", f.errtracePkg, "braces.dev/errtrace")
+				fmt.Fprintf(out, "%s %q", f.errtracePkg, "github.com/mypricehealth/errtrace")
 			}
 
 		case *insertWrapOpen:

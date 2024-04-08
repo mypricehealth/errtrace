@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"braces.dev/errtrace"
+	"github.com/mypricehealth/errtrace"
 )
 
 func TestClean_RealTrace(t *testing.T) {
@@ -19,17 +19,17 @@ func TestClean_RealTrace(t *testing.T) {
 	want := strings.Join([]string{
 		"f3: err",
 		"",
-		"braces.dev/errtrace/internal/tracetest.f3",
+		"github.com/mypricehealth/errtrace/internal/tracetest.f3",
 		"	/path/to/errtrace/internal/tracetest/clean_2_test.go:3",
-		"braces.dev/errtrace/internal/tracetest.f2",
+		"github.com/mypricehealth/errtrace/internal/tracetest.f2",
 		"	/path/to/errtrace/internal/tracetest/clean_2_test.go:2",
-		"braces.dev/errtrace/internal/tracetest.f1",
+		"github.com/mypricehealth/errtrace/internal/tracetest.f1",
 		"	/path/to/errtrace/internal/tracetest/clean_2_test.go:1",
-		"braces.dev/errtrace/internal/tracetest.TestClean_RealTrace",
+		"github.com/mypricehealth/errtrace/internal/tracetest.TestClean_RealTrace",
 		"	/path/to/errtrace/internal/tracetest/clean_test.go:1",
-		"braces.dev/errtrace/internal/tracetest.TestClean_RealTrace",
+		"github.com/mypricehealth/errtrace/internal/tracetest.TestClean_RealTrace",
 		"	/path/to/errtrace/internal/tracetest/clean_test.go:2",
-		"braces.dev/errtrace/internal/tracetest.TestClean_RealTrace",
+		"github.com/mypricehealth/errtrace/internal/tracetest.TestClean_RealTrace",
 		"	/path/to/errtrace/internal/tracetest/clean_test.go:3",
 		"",
 	}, "\n")

@@ -3,8 +3,8 @@ package errtrace_test
 import (
 	"fmt"
 
-	"braces.dev/errtrace"
-	"braces.dev/errtrace/internal/tracetest"
+	"github.com/mypricehealth/errtrace"
+	"github.com/mypricehealth/errtrace/internal/tracetest"
 )
 
 func f1() error {
@@ -29,10 +29,10 @@ func Example_trace() {
 	// Output:
 	//failed
 	//
-	//braces.dev/errtrace_test.f3
+	//github.com/mypricehealth/errtrace_test.f3
 	//	/path/to/errtrace/example_trace_test.go:3
-	//braces.dev/errtrace_test.f2
+	//github.com/mypricehealth/errtrace_test.f2
 	//	/path/to/errtrace/example_trace_test.go:2
-	//braces.dev/errtrace_test.f1
+	//github.com/mypricehealth/errtrace_test.f1
 	//	/path/to/errtrace/example_trace_test.go:1
 }
